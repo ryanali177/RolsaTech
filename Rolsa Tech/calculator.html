@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/fevicon.png" type="image/x-icon">
+  <title>ROLSA</title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!-- nice select -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha256-mLBIhmBvigTFWPSCtvdu6a76T+3Xyt+K571hupeFLg4=" crossorigin="anonymous" />
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carbon Footprint Calculator</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+      body {
+          font-family: Arial, sans-serif;
+          background-color: #f8f9fa;
+          padding: 20px;
+      }
+
+      .calculator {
+          background: white;
+          padding: 20px;
+          border-radius: 8px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .result {
+          margin-top: 20px;
+          font-weight: bold;
+      }
+  </style>
+</head>
+
+<body>
+  <div class="container calculator">
+      <h2>Carbon Footprint Calculator</h2>
+      <p>Calculate your carbon footprint based on your daily activities.</p>
+      <form id="calculatorForm">
+          <div class="form-group">
+              <label for="milesDriven">Miles Driven per Week:</label>
+              <input type="number" id="milesDriven" class="form-control" placeholder="Enter miles driven" required>
+          </div>
+          <div class="form-group">
+              <label for="electricityUsage">Electricity Usage (kWh per month):</label>
+              <input type="number" id="electricityUsage" class="form-control" placeholder="Enter kWh used" required>
+          </div>
+          <div class="form-group">
+              <label for="meatConsumption">Meat Consumption (meals per week):</label>
+              <input type="number" id="meatConsumption" class="form-control" placeholder="Enter meals per week" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Calculate</button>
+      </form>
+      <div id="result" class="result"></div>
+  </div>
+
+  <script>
+      document.getElementById("calculatorForm").addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevent the form from submitting normally
+
+          // Get input values
+          const milesDriven = parseFloat(document.getElementById("milesDriven").value);
+          const electricityUsage = parseFloat(document.getElementById("electricityUsage").value);
+          const meatConsumption = parseFloat(document.getElementById("meatConsumption").value);
+
+          // Example calculation (you can adjust the factors based on actual data)
+          const CO2_PER_MILE = 0.404; // kg CO2 per mile
+          const CO2_PER_KWH = 0.92; // kg CO2 per kWh
+          const CO2_PER_MEAL = 2.5; // kg CO2 per meat meal
+
+          // Calculate carbon footprint
+          const carbonFootprint = (milesDriven * CO2_PER_MILE) +
+              (electricityUsage * CO2_PER_KWH) +
+              (meatConsumption * CO2_PER_MEAL);
+
+          // Display the result
+          document.getElementById("result").innerText = `Your estimated carbon footprint is ${carbonFootprint.toFixed(2)} kg of CO2 per week.`;
+      });
+  </script>
+</body>
+
+</html>
+
+
+<body class="sub_page">
+  <div class="hero_area">
+    <div class="hero_bg_box">
+      <img src="images/hero-bg.jpg" alt="">
+    </div>
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="header_top">
+        <div class="container-fluid header_top_container">
+          <div class="contact_nav">
+            <a href="">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>
+                Manchester
+              </span>
+            </a>
+            <a href="">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>
+                Call : +447398122000
+              </span>
+            </a>
+            <a href="">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <span>
+                rolsatechinc@gmail.com
+              </span>
+            </a>
+          </div>
+          <div class="social_box">
+            <a href="">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header_bottom">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container ">
+            <a class="navbar-brand " href="index.html"> ROLSA </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=""> </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">Product Finder</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="service.html">Join Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="team.html
+                  
+                  

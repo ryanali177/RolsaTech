@@ -1,0 +1,303 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #001f3f; /* Navy Blue */
+    color: #ffffff; /* White text */
+}
+
+header {
+    background-color: #001f3f; /* Navy Blue */
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #ffffff; /* White text */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #2ecc40; /* Dark Green on hover */
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #003366; /* Darker Navy Blue */
+    border-left: 5px solid #2ecc40; /* Dark Green accent */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #001f3f; /* Navy Blue */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #00832cb6;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#filters {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#filters input, #filters select, #filters button {
+    margin: 0 10px;
+    padding: 10px;
+}
+
+#product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.product {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+}
+
+/* Add this to your existing styles.css */
+#registration {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+}
+
+#registration h2 {
+    text-align: center;
+}
+
+#registration div {
+    margin-bottom: 15px;
+}
+
+#registration label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#registration input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#registration button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#registration button:hover {
+    background-color: #0056b3;
+}
+
+#message {
+    margin-top: 15px;
+    text-align: center;
+    color: red;
+}
+
+/* Add this to your existing styles.css */
+#login {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+}
+
+#login h2 {
+    text-align: center;
+}
+
+#login div {
+    margin-bottom: 15px;
+}
+
+#login label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#login input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#login button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#login button:hover {
+    background-color: #0056b3;
+}
+
+#loginMessage {
+    margin-top: 15px;
+    text-align: center;
+    color: red;
+}
+
+.carbon_footprint_calculator {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.heading_container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Calculator Section */
+.calculator {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin: 30px 0;
+}
+
+/* Heading Styles */
+.calculator h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.calculator p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Result Styles */
+.result {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+}
